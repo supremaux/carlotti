@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlotti Peças Hidráulicas | Linha Pesada Rodoviária</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Black Ops One e Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Usplash -->
+    <link rel="preconnect" href="https://images.unsplash.com" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .font-heading {
+        font-family: "Black Ops One", cursive;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-zinc-950 text-zinc-100 antialiased selection:bg-red-600 selection:text-white pb-20 md:pb-0"
+  >
+    <!-- TOP BAR DE EMERGÊNCIA -->
+    <div
+      class="bg-red-600 text-white py-2 px-4 text-xs md:text-sm font-semibold flex justify-between items-center text-center"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <span class="flex items-center gap-2">
+          <i data-lucide="siren" class="w-4 h-4 animate-pulse"></i>
+          ATENDIMENTO RÁPIDO NA BR-163 - CAMPO GRANDE/MS
+        </span>
+        <a
+          href="https://wa.me/5567982004442?text=Olá!%20Preciso%20de%20atendimento%20de%20emergência%20para%20meu%20caminhão."
+          target="_blank"
+          class="hidden md:flex items-center gap-1 underline hover:text-zinc-200"
+        >
+          Falar com Mecânico de Plantão
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- HEADER / NAVBAR -->
+    <header
+      class="sticky top-0 z-40 bg-zinc-900/90 backdrop-blur-md border-b border-zinc-800"
+    >
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <!-- LOGO -->
+        <a href="#" class="flex items-center gap-2">
+          <img
+            src="/assets/logo.png"
+            width="150"
+            height="auto"
+            alt="Carlotti Peças Hidráulicas"
+            class="h-10 md:h-12 w-auto object-contain"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+          />
+        </a>
+
+        <!-- MENU DESKTOP -->
+        <nav
+          class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-300"
+        >
+          <a href="#produtos" class="hover:text-red-500 transition-colors"
+            >Catálogo de Peças</a
+          >
+          <a href="#servicos" class="hover:text-red-500 transition-colors"
+            >Manutenção</a
+          >
+          <a href="#localizacao" class="hover:text-red-500 transition-colors"
+            >Como Chegar</a
+          >
+        </nav>
+
+        <!-- CTA INTELIGENTE HEADER -->
+        <a
+          href="https://wa.me/5567982004442?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+          target="_blank"
+          class="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2.5 rounded-lg flex items-center gap-2 shadow-lg shadow-red-600/20 transition-all text-sm"
+        >
+          <i data-lucide="message-square" class="w-4 h-4"></i>
+          <span>Solicitar Orçamento</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-zinc-900 py-16 md:py-24 overflow-hidden">
+      <div
+        class="absolute inset-0 z-0 opacity-25 bg-cover bg-center"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1592805144716-feeccccef5ac?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&quot;);
+        "
+      ></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/80 to-transparent z-0"
+      ></div>
+
+      <div
+        class="container mx-auto px-4 relative z-10 grid md:grid-cols-12 gap-8 items-center"
+      >
+        <div class="md:col-span-7 space-y-6">
+          <div
+            class="inline-flex items-center gap-2 bg-zinc-800/80 border border-zinc-700 text-red-500 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider"
+          >
+            <i data-lucide="truck" class="w-4 h-4"></i> Especialistas em Linha
+            Pesada
+          </div>
+          <h1
+            class="text-4xl md:text-6xl font-heading text-white tracking-wide leading-tight"
+          >
+            SISTEMAS HIDRÁULICOS PARA CAMINHÕES
+          </h1>
+          <p class="text-zinc-400 text-base md:text-lg max-w-xl">
+            Venda, manutenção e instalação de kits hidráulicos, tomadas de
+            força, bombas e cilindros. Agilidade no mini anel de Campo Grande
+            (BR-163).
+          </p>
+
+          <!-- CTAs PRINCIPAIS -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <a
+              href="https://wa.me/5567982004442?text=Olá!%20Preciso%20de%20uma%20peça/serviço%20com%20urgência."
+              target="_blank"
+              class="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-3 shadow-xl shadow-red-600/20 transition-all text-base"
+            >
+              <i data-lucide="wrench" class="w-5 h-5"></i>
+              Agendar Reparo Urgente
+            </a>
+            <a
+              href="#produtos"
+              class="bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-white font-semibold px-6 py-4 rounded-xl flex items-center justify-center gap-2 transition-all text-base"
+            >
+              Ver Catálogo Digital
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </a>
+          </div>
+
+          <!-- STATS / DIFERENCIAIS -->
+          <div
+            class="grid grid-cols-3 gap-4 pt-6 border-t border-zinc-800/80 max-w-lg"
+          >
+            <div>
+              <p class="text-2xl font-bold text-white">BR-163</p>
+              <p class="text-xs text-zinc-400">Acesso Fácil no Anel Viário</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold text-white">Pronta Entrega</p>
+              <p class="text-xs text-zinc-400">Estoque de Linha Pesada</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold text-white">Garantia</p>
+              <p class="text-xs text-zinc-400">Peças e Serviços Qualificados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO DE PRODUTOS INTERATIVO -->
+    <section id="produtos" class="py-16 bg-zinc-950">
+      <div class="container mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-12"
+        >
+          <div>
+            <h2
+              class="text-xs uppercase tracking-widest text-red-500 font-bold mb-2"
+            >
+              Peças & Equipamentos
+            </h2>
+            <h3 class="text-3xl font-heading text-white">
+              CATÁLOGO DE LINHA PESADA
+            </h3>
+          </div>
+          <p class="text-zinc-400 text-sm max-w-md mt-2 md:mt-0">
+            Encontre os melhores componentes hidráulicos para caçambas,
+            basculantes e carretas.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- CARD 1 -->
+          <div
+            class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-700 transition-all flex flex-col justify-between group"
+          >
+            <div class="relative h-48 bg-zinc-800 overflow-hidden">
+              <img
+                src="https://www.modrali.com.br/imagens/informacoes/kits-hidraulicos-06.jpg?q=80&w=800&auto=format&fit=crop"
+                alt="Kits Hidráulicos"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                decoding="async"
+              />
+              <span
+                class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded"
+                >Basculantes</span
+              >
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="text-xl font-bold text-white mb-2">
+                  Kits Hidráulicos Completos
+                </h4>
+                <p class="text-zinc-400 text-sm mb-4">
+                  Sistemas completos para acoplamento de caçambas e carretas com
+                  máxima vazão.
+                </p>
+              </div>
+              <a
+                href="https://wa.me/5567982004442?text=Olá!%20Quero%20consultar%20preço%20de%20Kit%20Hidráulico."
+                target="_blank"
+                class="w-full bg-zinc-800 hover:bg-red-600 text-white font-semibold py-2.5 rounded-lg flex items-center justify-center gap-2 text-sm transition-colors"
+              >
+                <i data-lucide="message-square" class="w-4 h-4"></i> Cotar no
+                WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-700 transition-all flex flex-col justify-between group"
+          >
+            <div class="relative h-48 bg-zinc-800 overflow-hidden">
+              <img
+                src="https://hidramec.srv.br/wp-content/uploads/2023/03/Tomada-de-forca-Hidramec.jpg?q=80&w=800&auto=format&fit=crop"
+                alt="Tomadas de Força"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                decoding="async"
+              />
+              <span
+                class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded"
+                >Transmissão</span
+              >
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="text-xl font-bold text-white mb-2">
+                  Tomadas de Força (TDF)
+                </h4>
+                <p class="text-zinc-400 text-sm mb-4">
+                  Modelos multiplicados e reforçados para diversas marcas de
+                  câmbio pesados.
+                </p>
+              </div>
+              <a
+                href="https://wa.me/5567982004442?text=Olá!%20Quero%20consultar%20Tomada%20de%20Força%20para%20meu%20caminhão."
+                target="_blank"
+                class="w-full bg-zinc-800 hover:bg-red-600 text-white font-semibold py-2.5 rounded-lg flex items-center justify-center gap-2 text-sm transition-colors"
+              >
+                <i data-lucide="message-square" class="w-4 h-4"></i> Cotar no
+                WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-700 transition-all flex flex-col justify-between group"
+          >
+            <div class="relative h-48 bg-zinc-800 overflow-hidden">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4-kUX8zDSkaExDlAkgMplKVlJ0XmNhsHARiADU_9X3pw-_QnMpd6vAkqV&s=10&fit=crop"
+                alt="Bombas Hidráulicas"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                decoding="async"
+              />
+              <span
+                class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded"
+                >Pressão</span
+              >
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="text-xl font-bold text-white mb-2">
+                  Bombas Hidráulicas
+                </h4>
+                <p class="text-zinc-400 text-sm mb-4">
+                  Bombas de engrenagem e pistão com alta pressão de trabalho e
+                  durabilidade.
+                </p>
+              </div>
+              <a
+                href="https://wa.me/5567982004442?text=Olá!%20Preciso%20de%20uma%20Bomba%20Hidráulica."
+                target="_blank"
+                class="w-full bg-zinc-800 hover:bg-red-600 text-white font-semibold py-2.5 rounded-lg flex items-center justify-center gap-2 text-sm transition-colors"
+              >
+                <i data-lucide="message-square" class="w-4 h-4"></i> Cotar no
+                WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-700 transition-all flex flex-col justify-between group"
+          >
+            <div class="relative h-48 bg-zinc-800 overflow-hidden">
+              <img
+                src="https://http2.mlstatic.com/D_NQ_NP_680123-CBT113979939006_072026-O.webp?fit=crop"
+                alt="Cilindros e Válvulas"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                decoding="async"
+              />
+              <span
+                class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded"
+                >Reposição</span
+              >
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="text-xl font-bold text-white mb-2">
+                  Cilindros & Válvulas
+                </h4>
+                <p class="text-zinc-400 text-sm mb-4">
+                  Cilindros telescópicos, blocos de controle, mangueiras e
+                  reparos gerais.
+                </p>
+              </div>
+              <a
+                href="https://wa.me/5567982004442?text=Olá!%20Preciso%20de%20Cilindro/Válvula%20Hidráulica."
+                target="_blank"
+                class="w-full bg-zinc-800 hover:bg-red-600 text-white font-semibold py-2.5 rounded-lg flex items-center justify-center gap-2 text-sm transition-colors"
+              >
+                <i data-lucide="message-square" class="w-4 h-4"></i> Cotar no
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE OFICINA E MANUTENÇÃO -->
+    <section
+      id="servicos"
+      class="py-16 bg-zinc-900 border-t border-b border-zinc-800"
+    >
+      <div
+        class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <h2
+            class="text-xs uppercase tracking-widest text-red-500 font-bold mb-2"
+          >
+            Manutenção Especializada
+          </h2>
+          <h3 class="text-3xl font-heading text-white mb-6">
+            OFICINA TÉCNICA DE CAMINHÕES
+          </h3>
+          <p class="text-zinc-300 mb-6 leading-relaxed">
+            Seu veículo pesado não pode ficar parado. Oferecemos diagnóstico
+            rápido, substituição de reparos e manutenção preventiva ou corretiva
+            no seu sistema hidráulico com equipe qualificada.
+          </p>
+
+          <ul class="space-y-4 text-zinc-300 mb-8">
+            <li class="flex items-center gap-3">
+              <i data-lucide="check-circle" class="w-5 h-5 text-red-500"></i>
+              <span>Instalação completa de kits hidráulicos</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-lucide="check-circle" class="w-5 h-5 text-red-500"></i>
+              <span>Revisão e troca de vedações de cilindros</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-lucide="check-circle" class="w-5 h-5 text-red-500"></i>
+              <span
+                >Regulagem de pressão e substituição de óleo hidráulico</span
+              >
+            </li>
+          </ul>
+
+          <a
+            href="https://wa.me/5567982004442?text=Olá!%20Quero%20agendar%20uma%20manutenção%20na%20oficina."
+            target="_blank"
+            class="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3.5 rounded-xl inline-flex items-center gap-2 transition-all"
+          >
+            <i data-lucide="calendar" class="w-5 h-5"></i>
+            Agendar Horário na Oficina
+          </a>
+        </div>
+
+        <div class="relative">
+          <img
+            src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=800&auto=format&fit=crop"
+            alt="Oficina Carlotti"
+            width="800"
+            height="600"
+            class="rounded-2xl border border-zinc-800 shadow-2xl"
+            loading="lazy"
+            decoding="async"
+          />
+          <div
+            class="absolute -bottom-6 -left-6 bg-zinc-950 border border-zinc-800 p-4 rounded-xl hidden sm:flex items-center gap-4"
+          >
+            <div class="bg-red-600/20 text-red-500 p-3 rounded-lg">
+              <i data-lucide="clock" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <p class="text-white font-bold">Atendimento Ágil</p>
+              <p class="text-xs text-zinc-400">
+                Segunda a Sexta das 07h30 às 17h30
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO & ESTRATÉGIA BR-163 -->
+    <section id="localizacao" class="py-16 bg-zinc-950">
+      <div class="container mx-auto px-4">
+        <div
+          class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 md:p-12 grid md:grid-cols-2 gap-8 items-center"
+        >
+          <div>
+            <span
+              class="text-red-500 font-bold text-xs uppercase tracking-widest"
+              >Fácil Acesso</span
+            >
+            <h3 class="text-3xl font-heading text-white mt-2 mb-4">
+              LOCALIZAÇÃO PRIVILEGIADA
+            </h3>
+            <p class="text-zinc-400 mb-6">
+              Estamos localizados estrategicamente no Mini Anel Viário de Campo
+              Grande, em trecho direto da rodovia BR-163. Parada rápida para
+              socorro técnico e aquisição de peças.
+            </p>
+
+            <div class="space-y-3 text-sm text-zinc-300 mb-6">
+              <p class="flex items-start gap-3">
+                <i
+                  data-lucide="map-pin"
+                  class="w-5 h-5 text-red-500 shrink-0 mt-0.5"
+                ></i>
+                Av. Zilá Corrêa Machado, 2488 - Km 8.8 (Jd. Itamaracá), Campo
+                Grande - MS
+              </p>
+              <p class="flex items-center gap-3">
+                <i
+                  data-lucide="phone"
+                  class="w-5 h-5 text-red-500 shrink-0"
+                ></i>
+                (67) 98200-4442
+              </p>
+            </div>
+
+            <a
+              href="https://maps.google.com/?q=Carlotti+Peças+Hidráulicas+Campo+Grande"
+              target="_blank"
+              class="bg-zinc-800 hover:bg-zinc-700 text-white font-semibold px-5 py-3 rounded-xl inline-flex items-center gap-2 border border-zinc-700 text-sm transition-all"
+            >
+              <i data-lucide="navigation" class="w-4 h-4 text-red-500"></i>
+              Abrir Rota no GPS
+            </a>
+          </div>
+
+          <div
+            class="h-64 md:h-80 rounded-2xl overflow-hidden border border-zinc-800 relative bg-zinc-800"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.230784920261!2d-54.55182182393231!3d-20.537722157582573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486eb7f2d50699d%3A0x1d3a5ca1baeb97f1!2sAv.%20Zil%C3%A1%20Corr%C3%AAa%20Machado%2C%20Campo%20Grande%20-%20MS!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+              class="w-full h-full border-0 grayscale opacity-80"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-zinc-950 border-t border-zinc-900 py-8 text-center text-xs text-zinc-500"
+    >
+      <div class="container mx-auto px-4 space-y-2">
+        <p>
+          © 2026 Carlotti Peças Hidráulicas e Serviços LTDA. CNPJ:
+          57.181.826/0001-11
+        </p>
+        <p>
+          Desenvolvido com alta performance por
+          <a
+            href="https://supremaux.com"
+            target="_blank"
+            class="text-zinc-400 hover:text-white underline"
+            >Suprema UX</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- FLOATING CTA MOBILE (FIXO NA TELA) -->
+    <div
+      class="fixed bottom-0 left-0 right-0 bg-zinc-900/95 border-t border-zinc-800 p-3 md:hidden z-50 backdrop-blur-lg flex gap-2"
+    >
+      <a
+        href="https://wa.me/5567982004442?text=Olá!%20Vim%20pelo%20site%20e%20preciso%20de%20atendimento."
+        target="_blank"
+        class="flex-1 bg-red-600 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm shadow-lg shadow-red-600/30"
+      >
+        <i data-lucide="message-square" class="w-4 h-4"></i>
+        Orçamento WhatsApp
+      </a>
+      <a
+        href="https://maps.google.com/?q=Carlotti+Peças+Hidráulicas+Campo+Grande"
+        target="_blank"
+        class="bg-zinc-800 text-zinc-300 p-3 rounded-xl flex items-center justify-center border border-zinc-700"
+      >
+        <i data-lucide="map-pin" class="w-5 h-5 text-red-500"></i>
+      </a>
+    </div>
+
+    <!-- INICIALIZAÇÃO DOS ÍCONES LUCIDE -->
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
